@@ -1,4 +1,5 @@
 class Car
+  attr_reader :fuel
   MILES_PER_GALLON = 20
 
   def initialize
