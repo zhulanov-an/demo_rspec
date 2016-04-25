@@ -17,18 +17,18 @@ describe Hero do
     expect(hero.power_down).to eq 90
   end
 
-  it "it can info" do
+  it "displays full hero info" do
     hero = Hero.new 'mike'
     expect(hero.info).to eq 'Hero Mike has a health of 100'
   end
 
-  it "it can info after power up" do
+  it "displays info hero after power up" do
     hero = Hero.new 'mike'
     hero.power_up
     expect(hero.info).to eq 'Hero Mike has a health of 110'
   end
 
-  it "it can info after power up" do
+  it "displays info hero after power down" do
     hero = Hero.new 'mike'
     hero.power_down
     expect(hero.info).to eq 'Hero Mike has a health of 90'
