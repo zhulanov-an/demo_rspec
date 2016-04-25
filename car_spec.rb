@@ -18,5 +18,8 @@ describe Car do
     expect(@car.fuel).to eq 10
   end
 
-
+  it 'check range on car after add fuel' do
+    @car.add_fuel(10)
+    expect(@car.range).to eq 200
+  end
 end
